@@ -1,24 +1,3 @@
-::-webkit-scrollbar {
-    width: 8px;
-    z-index:1000;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    background: rgb(251, 255, 236);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: rgb(48, 48, 48);
-    border-radius: 4px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: greenyellow;
-}
-
 @font-face{
     font-family: "RobotoBOLD";
     src: url(fonts/Roboto-Black.ttf);
@@ -34,10 +13,6 @@
     src: url(fonts/Roboto-Medium.ttf);
 }
 
-@font-face{
-    font-family: "Moon";
-    src: url(fonts/Moon\ Light.otf);
-}
 body{
     background-color: rgb(251, 255, 236);
     font-family: Roboto;

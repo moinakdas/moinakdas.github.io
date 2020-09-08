@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Hi, I'm Moinak Das</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel = "icon" href = "images/circle-cropped.png">
+    <link rel= "stylesheet" href = "mobilestyle.css">
+    <script src = "effectsScript.js"></script>
+    <script>
+        // refreshing page automatically when viewport size change  
+        window.onresize = function(event) {
+        document.location.reload(true);
+        }
+
+        var href = window.location.href.split("/")
+        var html_location = href[href.length-1]
+
+        if (window.innerWidth >= 900 && html_location !== "index.html") {
+            window.location = "index.html";
+        }
+
+        if (window.innerWidth < 900 && html_location !== "mobile.html") {
+            window.location = "mobile.html";
+        }
+    </script>
+</head>
+<body>
+    <div id = "openingPage" style = "height: 800px; overflow-y: hidden;">
+        <div id = "HEY">HEY, IM</div>
+        <div id = "MOINAKDAS">MOINAK DAS</div>
+        <div id = "NICE">NICE TO MEET YOU</div>
+        <img id = "ME">
+    </div>
+    <br>
+    <div id = "mottoStart">
+        <div id = "box1"></div>
+        <div id = "box2"></div>
+        <div id = "box1" style = "text-align: right;"></div>
+        <div id = "motto" >
+            <h1>DONT BREAK THE MOLD.<br>REDEFINE IT.</h1>
+        </div>
+    </div>
+    <div id = "blurb">
+        <div class = "title">
+            I AM <a class="typewrite" data-period="2000" data-type='[ " A WEB DEVELOPER.", "A GAME DESIGNER.", 
+            "A TEACHER.", "A MUSICIAN.", "A DREAMER."]' "></a>
+        </div>
+        
+        <div class = "paragraph" style = "padding-top: 20px; padding-bottom: 30px;">
+            I'm a senior at Stuyvesant High School in New York City, NY. I have a passion for web development and three
+            years of work experience with non-profit origanizations. I'm proficient in HTML, CSS, python, php, java, mysql, 
+            and C#. I have experience with Android Studio, Unity Game Engine, and Wordpress. <br><br>
+
+            I'm also a capable Instructor, Tutor, or Mentor. I have experience teaching children in grades K - 8 through
+            programs such as Science Adventure Kids and the New York Youth Technology Team.<br><br>
+            In my free time I enjoy playing guitar, drawing, and making games with Unity. 
+        </div>
+        <a href = "" class = "button">Download My Resume</a>
+    </div>
+    <div class = "GAHS"> 
+        <div class = "filter"></div>
+        <div class = "text" style = "text-align: center; color: white;padding-left: 10%; padding-right: 10%;">
+            <div class = "title"style = "color: white; width: 100%;padding-top: 10px;">
+                Greater Astoria Historical Society
+            </div>
+            Jun. 2019 - Sept. 2021<br><br>
+            Responsible for creating Wordpress plugins to streamline the maintenenence of the astorialic.org website. 
+            <img src = "images/ApprovalSys1.png" style = "width: 95%; margin-top: 20px;">
+            <img src = "images/modular_plugin.png" style = "width: 95%; margin-top: 20px;margin-bottom: 20px;">
+            Created software to automate day-to-day tasks and complete them in a fraction of their original time
+            <br><br>
+            Worked on SEO, server hardening, and penetration testing | Involved in the development 
+            and design of PC and mobile applications | Used Android Studio and Unity to develop prototypes for these applications | Effectively 
+            communicate ideas through powerpoints and documents | Work with a team to plan out each phase of a project
+        </div>
+    </div>
+    <hr style = "margin: 0px; background: rgb(251, 255, 236);">
+    <div class = "SHS"> 
+        <div class = "filter"></div>
+        <div class = "text" style = "text-align: center; color: white;padding-left: 10%; padding-right: 10%;">
+            <div class = "title"style = "color: white; width: 100%;padding-top: 10px;">
+                Stuyvesant High School
+            </div>
+            Sep. 2018 - Jun. 2021<br><br>
+            Stuyvesant Spectator Web Department<br>
+            Responsible for uploading submissions to the school newspaper website            
+            <img src = "images/Stuy_Spectator.PNG" style = "width: 95%; margin-top: 20px;margin-bottom: 20px;">
+            Student Union IT Department<br>
+            Responsible for managing the IT help desk for the Student Union websites
+            <img src = "images/StuyActivities.PNG" style = "width: 95%; margin-top: 20px;margin-bottom: 20px;">
+        </div>
+    </div>
+    <div class = "blurb" style = "background-color: rgb(251, 255, 236">
+        <div class = "title" style = "text-align: center; color: black;padding-left: 10%; padding-right: 10%;
+        padding-top: 40px;">
+            <a class="typewrite" data-period="2000" data-type='[ "for i in range(100):", "for(int i = 0; i &lt; 100; i++){", 
+            "for($i = 0; $i &lt; 100; $i++){", "for(var i = 0; i &lt; 100; i++){"]'></a>
+        </div>
+        <div class = "paragraph" style = "padding-top: 20px; padding-bottom: 30px; padding-left: 12%; padding-right: 12% ;text-align: center;">
+            Computer science is a fascinating subject. By following a set of rules and leveraging those rules in 
+            specific ways, you can create complex algorithms to do just about anything. Like, for example, creating your own world. 
+            An eye for detail leaves little in the way of creating an engaging, jaw dropping game. That's what I strive towards. 
+            You'll often find me typing away in Visual Studio Code, distraught but not discouraged after finding out my code
+            doesn't <i>quite</i> work the way I wanted it to. Perhaps I'm designing a 3D drone on Fusion 360, or rigging an animated
+            version of myself in Blender.<br> <br>
+            <b>In my eyes, there are two types of people in this world: those who play games, and those who make them. </b><br>
+            <img src = "images/controller.png" style = "height: 15vw; margin:auto; margin-top: 30px">
+        </div>
+    </div>
+
+</body>

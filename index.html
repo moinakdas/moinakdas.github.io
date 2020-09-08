@@ -6,13 +6,30 @@
     <link rel = "icon" href = "images/circle-cropped.png">
     <link rel= "stylesheet" href = "style.css">
     <script src = "effectsScript.js"></script>
+    <script>
+                // refreshing page automatically when viewport size change  
+        window.onresize = function(event) {
+        document.location.reload(true);
+        }
+
+        var href = window.location.href.split("/")
+        var html_location = href[href.length-1]
+
+        if (window.innerWidth >= 900 && html_location !== "index.html") {
+            window.location = "index.html";
+        }
+
+        if (window.innerWidth < 900 && html_location !== "mobile.html") {
+            window.location = "mobile.html";
+        }
+    </script>
 </head>
 <body>
     <div class = "navBar">
-        <a href = "" ><li class = "navLink">Instagram</li></a>
-        <a href = ""><li class = "navLink">Github</li></a>
-        <a href = ""><li class = "navLink">LinkedIn</li></a>
-        <a href = ""><li class = "navLink">Resume</li></a>
+        <a href = "https://www.instagram.com/moinak.das.equals.banananana/" ><li class = "navLink">Instagram</li></a>
+        <a href = "https://github.com/Sadkoi"><li class = "navLink">Github</li></a>
+        <a href = "https://www.linkedin.com/in/moinak-das-1708031b4/"><li class = "navLink">LinkedIn</li></a>
+        <a href = "Moinak's_Resume.pdf"><li class = "navLink">Resume</li></a>
         <a href = ""><li class = "navLink">Contact</li></a>
     </div>
     <div id = "openingPage">
@@ -56,8 +73,6 @@
         </div>
         <a href = "" class = "button">Download My Resume</a>
         <br><br>
-        <div class = "paragraph" style = "margin-top: 150px;">See My Work</div>
-        <img src = "images/tripleArrow.png" style = "margin: auto; height: 50px;">
     </div>
     <div class = "GAHS"> 
         <div class = "leftColumn">
