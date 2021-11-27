@@ -2,12 +2,14 @@
 <head>
     <meta charset="utf-8">
     <title>Hi, I'm Moinak Das</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel = "icon" href = "images/circle-cropped.png">
-    <link rel= "stylesheet" href = "mobilestyle.css">
-    <script src = "effectsScript.js"></script>
+    <meta name ="viewport" content="width=device-width">
+    <link rel = "icon" href = "images/Moinak_logo.png">
+    <link rel= "stylesheet" href = "mobileStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/color/jquery.color-2.1.2.js"></script>
+    <script src = "mobileEffects.js"></script> 
     <script>
-        
+
         var href = window.location.href.split("/")
         var html_location = href[href.length-1]
 
@@ -21,89 +23,174 @@
     </script>
 </head>
 <body>
-    <div id = "openingPage" style = "height: 800px; overflow-y: hidden;">
-        <div id = "HEY">HEY, IM</div>
-        <div id = "MOINAKDAS">MOINAK DAS</div>
-        <div id = "NICE">NICE TO MEET YOU</div>
-        <img id = "ME">
+    <div id = "openingPage" style = "position: relative; height: 100vh;overflow: hidden; background-color: transparent;">
+        <hr id = "blanket" style = "position: absolute; right:0px; top: -10px; width: 0%; height: 100vh; background-color: #4973ff; border: 1px #4973ff solid;">
+        <h1 style = "position: absolute; left: calc(40% - 30vw); top: 60px; font-size: min(20vw,70px); color:white;">MOINAK</h1>
+        <h1 style = "position: absolute; left: calc(40% + 8vw); top: min(calc(60px + 20vw),130px); font-size: min(20vw,70px); color:white">DAS</h1>
+        <h1 style = "position: absolute; left: calc(40% - 20vw); top: min(calc(90px + 50vw),250px); font-size: min(5.5vw,19.25px); color:white; ">&#60;&#47;Web Developer&#62;</h1>
+        <img src = "images/me_transparent.png" style = "position: absolute; right: 0px; bottom: -1px; width: 70vw; max-width: 300px;">
     </div>
     <br>
-    <div id = "mottoStart">
-        <div id = "box1"></div>
-        <div id = "box2"></div>
-        <div id = "box1" style = "text-align: right;"></div>
-        <div id = "motto" >
-            <h1>DONT BREAK THE MOLD.<br>REDEFINE IT.</h1>
-        </div>
-    </div>
-    <div id = "blurb" style = "min-height: 70vw;">
-        <div class = "title">
-            I AM <a class="typewrite" data-period="2000" data-type='[ " A WEB DEVELOPER.", "A GAME DESIGNER.", 
-            "A TEACHER.", "A MUSICIAN.", "A DREAMER."]' "></a>
-        </div>
-        
-        <div class = "paragraph" style = "padding-top: 20px; padding-bottom: 30px;">
-            I'm a senior at Stuyvesant High School in New York City, NY. I have a passion for web development and three
-            years of work experience with non-profit origanizations. I'm proficient in HTML, CSS, python, php, java, mysql, 
-            and C#. I have experience with Android Studio, Unity Game Engine, and Wordpress. <br><br>
+    <!---->
+    <div id = "createThings" style = "position:relative;text-align:center;z-index: 2;">
+        <div id = "AboutMeTitle">Let's Create Things<span style = "color:#ec3939;margin-left:3px;">.</span>
+        <br>
+        <hr style = "width:60vw; margin-left:2vw; height:0px; border: 0.5px #f6f8fd solid; background-color: #f6f8fd;">
+        </div><br>
 
-            I'm also a capable Instructor, Tutor, or Mentor. I have experience teaching children in grades K - 8 through
-            programs such as Science Adventure Kids and the New York Youth Technology Team.<br><br>
-            In my free time I enjoy playing guitar, drawing, and making games with Unity. 
-        </div>
-        <a href = "" class = "button">Download My Resume</a>
+        <p style = "width: 80vw; max-width: 800px;margin-top:-20px;margin-left:10vw;letter-spacing:min(0.4vw, 1.6px);font-size: min(4vw, 16px);
+        line-height:min(6vw, 24px);text-align:left;">
+            I'm a software and full stack web developer based in New York City, and a Mechanical Engineering student at
+            Stony Brook University. Over the course of three years, I've had the pleasure of working with numerous origanizations 
+            to improve online presence, conduct regular website maintenenence and troubleshooting, implement software solutions to 
+            streamline workflow, and train interns. I've also had the privilege of working with organizations to tutor children in 
+            underserved communities. My skills make me a capable K-12 tutor for STEM courses.
+        </p>
+        <div class = "button" style = "width: min(40vw,160px); font-size: min(4.4vw,17.6px);left: min(22vw,88px); top: min(3vw,12px);" 
+        href = "Resume_MoinakDas.pdf">Download Resume</div>
         <br><br>
-    </div>
-    <div class = "GAHS"> 
-        <div class = "filter"></div>
-        <div class = "text" style = "text-align: center; color: white;padding-left: 10%; padding-right: 10%;">
-            <div class = "title"style = "color: white; width: 100%;padding-top: 10px;">
-                Greater Astoria Historical Society
+        <p style = "font-family: PTSansITALIC; width: 80vw; max-width: 800px;margin-top:0px;margin-left:10vw;letter-spacing:min(0.4vw, 1.6px);
+        font-size: min(4vw, 16px);line-height:min(6vw, 24px);text-align:left;">
+            "Mr. Das made the website more user friendly for our team, who has little knowledge of
+            computer language and codes. Moinak is a very competent young man who can analyze the tasks
+            needed to accomplish a goal. We want to thank Moinak for his work and look forward to having 
+            him intern with us again"<br> <span style = "font-family: PTSansBOLD;">- Debbie Van Cura, 
+            The Greater Astoria Historical Society</span>
+        </p>
+        <!--
+        <div style = "width: 100vw;max-width: 800px; padding-top:10px;margin-left:0px;">
+            <div style = "padding-left: 0px;">
+                <img src = "images/GAHS.PNG" style = "position: relative; margin-top: 2px; width: min(41vw,200px);">
+                <img src = "images/NYYTT.PNG" style = "position: relative; margin-top: 2px; width: min(41vw,200px);"><br>
+                <img src = "images/STS.PNG" style = "position: relative; margin-top: 2px; width: min(41vw,200px);">
+                <img src = "images/spec.png" style = "position: relative; margin-top: 0px; width: min(41vw,200px);">
             </div>
-            Jun. 2019 - Sept. 2021<br><br>
-            Responsible for creating Wordpress plugins to streamline the maintenenence of the astorialic.org website. 
-            <img src = "images/ApprovalSys1.png" style = "width: 95%; margin-top: 20px;">
-            <img src = "images/modular_plugin.png" style = "width: 95%; margin-top: 20px;margin-bottom: 20px;">
-            Created software to automate day-to-day tasks and complete them in a fraction of their original time
+            <div>
+                <img src = "images/MarniH.PNG" style = "position: relative; margin-top: 2px; width: min(25vw,100px);">
+                <img src = "images/SSS.PNG" style = "position: relative; margin-top: 2px; height: min(25vw,100px);">
+                <img src = "images/SU.png" style = "position: relative; margin-top: 2px; height: min(25vw,100px);">
+            </div>
+        </div>-->
+        <div>
+            <img src = "images/arduino.png" style = "position: relative; margin-top: 2px; width: min(80vw,320px);">
+        </div>
+        <p style = "width: 80vw; max-width: 800px;margin-top:30px;margin-left:10vw;letter-spacing:min(0.4vw, 1.6px);font-size: min(4vw, 16px);
+        line-height:min(6vw, 24px);text-align:left;padding-bottom:30px;">
+            As a Mechanical Engineering student, I also have experience with 3D modelling and AutoCAD. I have four years of experience
+            with Autodesk Inventor, Fusion 360, and Blender. Furthermore, I have experience with Arduino wiring and 
+            software development, as well as being able to complete large engineering projects under tight deadlines. My technical skills 
+            include experience with: Android Studio, WordPress, JQuery, Unity, Blender, Fusion 360, and Django. I am able to
+            implement software solutions written in Python, Java, C#, PHP, HTML, CSS, and Javascript.
+        </p>
+        <img src = "images/mobile/Education.jpeg" style = "position:relative; width:100vw;margin-left:0vw;">
+        <h1 style = "font-size: min(10vw, 40px);margin-bottom: 0px;text-align: left; margin-left: 10vw;">Education</h1>
+        <hr style = "width:48vw; margin-left:10vw; height:0px; border: 0.5px #f6f8fd solid; background-color: #f6f8fd;">
+        <p style = "width: 80vw; margin-left: 10vw; max-width: 800px; margin-top:10px;letter-spacing:0.05em;font-size: 18px;line-height:1.75; color: #f6f8fd; 
+        text-align: left;">
+            <span style = "font-family:PTSansBOLD;font-size: min(4.75vw, 19px);">Stony Brook University</span><br>
+            <span style = "font-family:PTSans;font-size: min(3.75vw, 15px);">	Long Island, New York</span><br>
+            <span style = "font-family:PTSans;font-size: min(4.5vw, 18px);">B.E Mechanical Engineering</span>
+            <br>
+            <span style = "font-family:PTSansITALIC;font-size:15px;margin-top:0px;">(2021 - 2025)</span>
             <br><br>
-            Worked on SEO, server hardening, and penetration testing | Involved in the development 
-            and design of PC and mobile applications | Used Android Studio and Unity to develop prototypes for these applications | Effectively 
-            communicate ideas through powerpoints and documents | Work with a team to plan out each phase of a project
-        </div>
-        <br><br>
+            <span style = "font-family:PTSansBOLD;font-size:min(4.75vw, 19px);">Stuyvesant High School</span><br>
+            <span style = "font-family:PTSans;font-size: min(3.75vw, 15px);">Manhattan, New York</span><br>
+            <span style = "font-family:PTSans;font-size: min(4.5vw, 18px);">IntroCS, AP Computer Science, Artificial Intelligence</span>
+            <br>
+            <span style = "font-family:PTSansITALIC;font-size:15px;margin-top:0px;">(2018 - 2021)</span>
+            <br><br>
+            <span style = "font-family:PTSansBOLD;font-size:min(4.75vw, 19px);">Brooklyn Technical High School</span><br>
+            <span style = "font-family:PTSans;font-size: min(3.75vw, 15px);">Brooklyn, New York</span><br>
+            <span style = "font-family:PTSans;font-size: min(4.5vw, 18px);">Designing and Drafting For Production</span>
+            <br>
+            <span style = "font-family:PTSansITALIC;font-size:15px;margin-top:0px;">(2017 - 2018)</span>
+        </p>
     </div>
-    <hr style = "margin: 0px; background: rgb(251, 255, 236);">
-    <div class = "SHS"> 
-        <div class = "filter" style = "min-height: 170vw;"></div>
-        <div class = "text" style = "text-align: center; color: white;padding-left: 10%; padding-right: 10%;">
-            <div class = "title"style = "color: white; width: 100%;padding-top: 10px;">
-                Stuyvesant High School
-            </div>
-            Sep. 2018 - Jun. 2021<br><br>
-            Stuyvesant Spectator Web Department<br>
-            Responsible for uploading submissions to the school newspaper website            
-            <img src = "images/Stuy_Spectator.PNG" style = "width: 95%; margin-top: 20px;margin-bottom: 20px;">
-            Student Union IT Department<br>
-            Responsible for managing the IT help desk for the Student Union websites
-            <img src = "images/StuyActivities.PNG" style = "width: 95%; margin-top: 20px;margin-bottom: 20px;">
-        </div>
+    <div id = "experience">
+        <h1 style = "font-size: min(10vw, 40px);margin-bottom: 0px;text-align: left; margin-left: 10vw;">Greater Astoria Historical Society</h1>
+        <hr style = "width:70vw; margin-left:10vw; height:0px; border: 1px #15161b solid; background-color: #15161b;">
+        <span style = "font-family: PTSansBOLD; font-size:min(5vw,20px);margin-left: 10vw;">Software Developer</span><br>
+        <span style = "font-family: PTSansITALIC; font-size:min(3.5vw,14px);margin-left: 10vw;">(May 2019 - August 2020)</span><br>
+        <p style = "font-family: PTSans;font-size:min(4vw,16px);margin-left: 10vw;">
+            Developed wordpress plugins using PHP to streamline website submission processes<br><br>
+            Designed new origanization website that tripled user traffic<br><br>
+            Created software to automate day-to-day tasks and complete them in a fraction of their original time<br><br>
+            Involved in the development and design of PC and mobile applications<br><br>
+            Used Android Studio and Unity to develop prototypes for these applications<br><br>
+            Effectively communicate ideas through powerpoints and written documents
+        </p>
+        <img src = "images/GAHS3.PNG" style = "margin-left: 10vw;margin-top:10px;margin-bottom:10px; width: 80vw;">
+        <img src = "images/ApprovalSys1.png" style = "margin-left: 10vw;margin-top:10px;margin-bottom:10px; width: 80vw;">
     </div>
-    <div class = "blurb" style = "background-color: rgb(251, 255, 236">
-        <div class = "title" style = "text-align: center; color: black;padding-left: 10%; padding-right: 10%;
-        padding-top: 40px;">
-            <a class="typewrite" data-period="2000" data-type='[ "for i in range(100):", "for(int i = 0; i &lt; 100; i++){", 
-            "for($i = 0; $i &lt; 100; $i++){", "for(var i = 0; i &lt; 100; i++){"]'></a>
-        </div>
-        <div class = "paragraph" style = "padding-top: 20px; padding-bottom: 30px; padding-left: 12%; padding-right: 12% ;text-align: center;">
-            Computer science is a fascinating subject. By following a set of rules and leveraging those rules in 
-            specific ways, you can create complex algorithms to do just about anything. Like, for example, creating your own world. 
-            An eye for detail leaves little in the way of creating an engaging, jaw dropping game. That's what I strive towards. 
-            You'll often find me typing away in Visual Studio Code, distraught but not discouraged after finding out my code
-            doesn't <i>quite</i> work the way I wanted it to. Perhaps I'm designing a 3D drone on Fusion 360, or rigging an animated
-            version of myself in Blender.<br> <br>
-            <b>In my eyes, there are two types of people in this world: those who play games, and those who make them. </b><br>
-            <img src = "images/controller.png" style = "height: 15vw; margin:auto; margin-top: 30px">
-        </div>
+    <div id = "experience">
+        <h1 style = "font-size: min(10vw, 40px);margin-bottom: 0px;text-align: left; margin-left: 10vw;">Marni Halasa For City Council</h1>
+        <hr style = "width:70vw; margin-left:10vw; height:0px; border: 1px #15161b solid; background-color: #15161b;">
+        <span style = "font-family: PTSansBOLD; font-size:min(5vw,20px);margin-left: 10vw;">Senior Web Developer</span><br>
+        <span style = "font-family: PTSansITALIC; font-size:min(3.5vw,14px);margin-left: 10vw;">(September 2020 - January 2021)</span><br>
+        <p style = "font-family: PTSans;font-size:min(4vw,16px);margin-left: 10vw;">
+            Developed new website to promote the campaign<br><br>
+            Successfully managed a team of two Junior Web Developers<br><br>
+            Trained staff members on how to use Wordpress plugins and independently make minor changes to the website<br><br>
+            Create responsive UIs on both PC and mobile platforms<br><br>
+            Worked with client to create a user experience representative of the brand<br><br>
+        </p>
+        <img src = "images/MHss1.jpg" style = "margin-left: 10vw;margin-top:10px;margin-bottom:10px; width: 80vw;">
+        <img src = "images/MHss2.jpg" style = "margin-left: 10vw;margin-top:10px;margin-bottom:10px; width: 80vw;">
     </div>
-
+    <div id = "experience">
+        <h1 style = "font-size: min(10vw, 40px);margin-bottom: 0px;text-align: left; margin-left: 10vw;">Student Union IT Department</h1>
+        <hr style = "width:70vw; margin-left:10vw; height:0px; border: 1px #15161b solid; background-color: #15161b;">
+        <span style = "font-family: PTSansBOLD; font-size:min(5vw,20px);margin-left: 10vw;">IT Technician</span><br>
+        <span style = "font-family: PTSansITALIC; font-size:min(3.5vw,14px);margin-left: 10vw;">(September 2019 - January 2020)</span><br>
+        <p style = "font-family: PTSans;font-size:min(4vw,16px);margin-left: 10vw;">
+            Managed IT help desk for the Student Union website<br><br>
+            Managed the Student Union Website, helped brainstorm new features during meetings<br><br>
+        </p>
+        <img src = "images/StuyActivities.PNG" style = "margin-left: 10vw;margin-top:10px;margin-bottom:10px; width: 80vw;">
+    </div>
+    <div id = "experience">
+        <h1 style = "font-size: min(10vw, 40px);margin-bottom: 0px;text-align: left; margin-left: 10vw;">Stuyvesant Spectator Web Department</h1>
+        <hr style = "width:70vw; margin-left:10vw; height:0px; border: 1px #15161b solid; background-color: #15161b;">
+        <span style = "font-family: PTSansBOLD; font-size:min(5vw,20px);margin-left: 10vw;">Content Manager</span><br>
+        <span style = "font-family: PTSansITALIC; font-size:min(3.5vw,14px);margin-left: 10vw;">(January 2019 - June 2020)</span><br>
+        <p style = "font-family: PTSans;font-size:min(4vw,16px);margin-left: 10vw;">
+            Responsible for submissions of articles to the school newspaper website<br><br>
+        </p>
+        <img src = "images/Stuy_Spectator.jpg" style = "margin-left: 10vw;margin-top:10px;margin-bottom:10px; width: 80vw;">
+    </div>
+    <div id = "experience">
+        <h1 style = "font-size: min(10vw, 40px);margin-bottom: 0px;text-align: left; margin-left: 10vw;">Stuyvesant Study Society</h1>
+        <hr style = "width:70vw; margin-left:10vw; height:0px; border: 1px #15161b solid; background-color: #15161b;">
+        <span style = "font-family: PTSansBOLD; font-size:min(5vw,20px);margin-left: 10vw;">Private Tutor</span><br>
+        <span style = "font-family: PTSansITALIC; font-size:min(3.5vw,14px);margin-left: 10vw;">(September 2020 - January 2021)</span><br>
+        <p style = "font-family: PTSans;font-size:min(4vw,16px);margin-left: 10vw;">
+            One on one tutoring with a fourth grade student for elementary-level math<br><br>
+        </p>
+        <img src = "images/StuyStudyS.PNG" style = "margin-left: 10vw;margin-top:10px;margin-bottom:10px; width: 80vw;">
+    </div>
+    <div id = "experience">
+        <h1 style = "font-size: min(10vw, 40px);margin-bottom: 0px;text-align: left; margin-left: 10vw;">New York Youth Technology Team</h1>
+        <hr style = "width:70vw; margin-left:10vw; height:0px; border: 1px #15161b solid; background-color: #15161b;">
+        <span style = "font-family: PTSansBOLD; font-size:min(5vw,20px);margin-left: 10vw;">Tutor</span><br>
+        <span style = "font-family: PTSansITALIC; font-size:min(3.5vw,14px);margin-left: 10vw;">(June 2020 - September 2020)</span><br>
+        <p style = "font-family: PTSans;font-size:min(4vw,16px);margin-left: 10vw;">
+            Taught children aged 11 – 14 how to code in python<br><br>
+            Created engaging lesson plans based on problem-solving and technique, cultivating 
+            a broader understanding of programming languages.<br><br>
+        </p>
+        <img src = "images/NYYTTS.PNG" style = "margin-left: 10vw;margin-top:10px;margin-bottom:10px; width: 80vw;">
+    </div>
+    <div id = "experience">
+        <h1 style = "font-size: min(10vw, 40px);margin-bottom: 0px;text-align: left; margin-left: 10vw;">Science Adventure Kids</h1>
+        <hr style = "width:70vw; margin-left:10vw; height:0px; border: 1px #15161b solid; background-color: #15161b;">
+        <span style = "font-family: PTSansBOLD; font-size:min(5vw,20px);margin-left: 10vw;">Instructor</span><br>
+        <span style = "font-family: PTSansITALIC; font-size:min(3.5vw,14px);margin-left: 10vw;">(June 2019 - September 2019)</span><br>
+        <p style = "font-family: PTSans;font-size:min(4vw,16px);margin-left: 10vw;">
+            Managed social media platforms<br><br>
+            Taught children elementary-level science concepts<br><br>
+            Helped children with disabilities keep up with instruction<br><br>
+            Established effective communication with children and coworkers<br><br>
+            Responsible for animal care, feedings, and cleanings<br><br>
+        </p>
+    </div>
 </body>

@@ -1,261 +1,82 @@
 @font-face{
-    font-family: "RobotoBOLD";
-    src: url(fonts/Roboto-Black.ttf);
+    font-family: "PTSans";
+    src: url(fonts/PTSans-Regular.ttf);
 }
 
 @font-face{
-    font-family: "Roboto";
-    src: url(fonts/Roboto-Light.ttf);
+    font-family: "PTSansBOLD";
+    src: url(fonts/PTSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: "PTSansITALIC";
+    src: url(fonts/PTSans-Italic.ttf);
 }
 
 @font-face{
-    font-family: "RobotoMid";
-    src: url(fonts/Roboto-Medium.ttf);
+    font-family: "Lora";
+    src: url(fonts/Lora-VariableFont_wght.ttf);
 }
-
 
 body{
-    background-color: rgb(251, 255, 236);
-    font-family: Roboto;
+    background-color: #15161b;
+    font-family: PTSans;
+    color: #f6f8fd;
     padding: 0px;
     margin: 0px;
+    overflow-x:hidden;
+    letter-spacing: 0.01em;
 }
 
 a{
-    text-decoration: none;
-    color: black;
+    text-decoration: none; 
+    color: #f6f8fd;
 }
-
 
 #openingPage{
-    position: absolute;
-    background-color:transparent;
-    height: 700px;
-    width: calc(100% - 1px);
-    z-index: -2;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-}
-#openingPage{
-    background-color: rgb(251, 255, 236);
+    background-image: url(images/mobile/BlackSea.jpeg);
     width: 100%;
-    position: fixed;
+    height: 100%;
+    z-index: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-#HEY{
-    -webkit-animation: heyfade 0.7s;
-    padding-top: 20px;
-    padding-bottom: 30px;
-    font-family: RobotoBOLD;
-    z-index: -1;
-    font-size: 8vw;
-    width: 100%;
-    background-color: rgb(251, 255, 236);
-    text-align: center;
-}
-
-#MOINAKDAS{
-    -webkit-animation: imfade 1s;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-family: RobotoBOLD;
-    z-index: -1;
-    font-size: 14vw;
-    width: 100%;
-    background-color: rgb(251, 255, 236);
-    text-align: center;
-}
-
-#NICE{
-    -webkit-animation: imfade 1.5s;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    font-family: RobotoBOLD;
-    z-index: -1;
-    font-size: 6vw;
-    width: 100%;
-    background-color: rgb(251, 255, 236);
-    text-align: center;
-}
-
-@-webkit-keyframes heyfade{
-    0%{
-        color: transparent;
-    }
-    33%{
-        color:transparent;
-    }
-    100%{
-        color: black;
-    }
-}
-
-@-webkit-keyframes imfade{
-    0%{
-        color:transparent;
-    }
-    60%{
-        color: transparent;
-    }
-    100%{
-        color: black;
-    }
-}
-
-#ME{
-    content: url(images/1599442555737.png);
-    width: 100%;
-    z-index: -1;
-}
-
-#mottoStart{
-    margin-top: 740px;
-    height: 550px;
-    background-color: transparent;
+#createThings{
+    background-color: #15161b;
     overflow: hidden;
     margin-bottom: 0px;
     padding: 0px;
-    display: flex;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-}
-
-#box1{
-    background-color: rgb(131, 211, 11);
-    width: calc(100% / 3);
-    height: 550px;
-    display: inline-block;
-    text-align: left;
-    border: 1px solid rgb(251, 255, 236);
-}
-
-#box2{
-    background-color: rgb(131, 211, 11);
-    width: calc(100% / 3);
-    height: 450px;
-    margin-top: 50px;
-    margin-bottom: 0px;
-    display: inline-block;
-    text-align: center;
-    border: 1px solid rgb(251, 255, 236);
-    border-bottom: 50px solid rgb(251, 255, 236);
-    border-bottom:
-}
-
-#motto{
-    font-family: RobotoBOLD;
-    text-align: center;
-    color: white;
-    font-size: 5vw;
-    position: absolute;
-    margin-top: 275px;
-    transform: translateY(-50%);
-
-}
-
-#endMotto{
-    width: 100%;
-    margin-top: 0px;
-    height: 50px;
-    background-color: transparent;
-    overflow: hidden;
-    margin-bottom: 0px;
-    padding: 0px;
-    display: flex;
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Edge, Opera and Firefox */
-}
-
-#blurb{
-    padding-top: 50px;
-    text-align: center;
-    background-color: rgb(251, 255, 236);
-    padding-left: 10%;
-    padding-right: 10%;
-    min-height: 60vw;
-}
-
-.paragraph{
-    font-size: 4vw;
-    color: black;
-}
-
-.title{
-    font-family: RobotoBOLD; 
-    font-size: 6vw; 
-    color: black;
 }
 
 .button{
-    background-color: rgb(29, 29, 29);
-    font-family: Roboto;
-    color: white;
-    border-radius: 3vw;
-    font-size: 2.3vw;
-    padding: 10px;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    white-space: nowrap;
+    position: relative;
+    background-color: #4973ff;
+    color: #f6f8fd;
+    padding-top: min(3vw,12px);
+    padding-bottom: min(3vw,12px);
+    padding-right: min(6vw,24px);
+    padding-left: min(6vw,24px);
+    border-radius: min(6vw,26px);
 }
 
-.button:hover{
-    background-color: greenyellow;
-    color:black;
+#AboutMeTitle{
+    font-family: Lora;
+    font-weight: 180;
+    font-size: min(10vw, 40px);
+    letter-spacing: 0.02em;
+    text-align: left;
+    padding-left:8vw;
 }
 
-.GAHS{
-    /* The image used */
-    background-image: url("images/GAHS_team.jpg");
-
-    /* Set a specific height */
-    min-height: 200vw; 
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: 100% 0%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    overflow: hidden;
-}
-
-.SHS{
-    /* The image used */
-    background-image: url("images/StuyStrums.jpg");
-
-    /* Set a specific height */
-    min-height: 170vw; 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: 10% 0%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    overflow: hidden;
-}
-
-.filter{
-    position: absolute;
-    background-color: black;
-    opacity: 60%;
-    width: 100%;
-    min-height: 200vw; 
-}
-
-.text{
-    position: absolute;
+#experience{
+    background-color: #f6f8fd;
+    color: #15161b;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-right:10vw;
+    margin-top: -1px;
 }
