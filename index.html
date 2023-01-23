@@ -1,301 +1,590 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8">
-    <title>Hi, I'm Moinak Das</title>
-    <meta name ="viewport" content="width=device-width">
-    <link rel = "icon" href = "images/Moinak_logo.png">
+    <title>Moinak Das, Mechanical Engineer & Software Developer</title>
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="images/gradPic.png" />
+    <meta name = "author" content = "Moinak Das">
+    <meta name = "keywords" content = "Moinak Das, Mechanical Engineer, Software Developer">
+    <meta name = "description" content = "Meet Moinak Das, a Mechanical Engineer and Software developer with over five years of professional experience">
+    <link rel = "icon" href = "images/mainLogo.png">
+    <meta name = "description" content = "Welcome to the American Society of Mechanical Engineers, a mechanical engineering club at Stony Brook University!">
+    <link rel = "icon" href = "images/titleIcon.png">-->
     <link rel= "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "mobileStyle.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="jquery.color-2.1.2.js"></script>
-    <script src = "buttonEffects.js"></script>
-    <script>
-
-        var href = window.location.href.split("/")
-        var html_location = href[href.length-1]
-
-        if (window.innerWidth >= 900 && html_location !== "index.html") {
-            window.location = "index.html";
-        }
-
-        if (window.innerWidth < 900 && html_location !== "mobile.html") {
-            window.location = "mobile.html";
-        }
-    </script>
+    <script src="scripts/meEffects.js"> </script>
+    <script src="scripts/mobileEffects.js"> </script>
 </head>
 <body>
-    <div id = "openingPage">
-        <img id = "bottomDiv">
-        <img id = "me">
-        <div id = "HEY">HEY,</div>
-        <div id = "IM">IM</div>
-        <div id = "MOINAKDAS" style = "white-space: nowrap;">MOINAK DAS</div>
-        <div id = "NICE">NICE TO MEET YOU</div>
-        <div id = "links">
-            <!--<a class = "openingButton" id = "bu1" >My Experience<img class = "plus" id = "p1"></a>-->
-            <a class = "openingButton" id = "bu2" href = "Resume_MoinakDas.pdf">Resume<img class = "plus" id = "p2"></a>
-            <a class = "openingButton" id = "bu3" href = "https://www.linkedin.com/in/moinak-das-1708031b4">LinkedIn<img class = "plus" id = "p3"></a><br><br><br>
-            <a class = "openingButton" id = "bu4" href = "https://sadkoi.itch.io/">Itch.io<img class = "plus" id = "p4"></a>
-            <a class = "openingButton" id = "bu5" href = "https://www.artstation.com/moinakdas">CAD Portfolio<img class = "plus" id = "p5"></a>
-            <a class = "openingButton" id = "bu6" href = "https://github.com/Sadkoi">Github<img class = "plus" id = "p6"></a>
-            <!--<a class = "openingButton" id = "bu7" href = "">Contact Me<img class = "plus" id = "p7"></a>-->
+    <div id = "aboveFold">
+        <div id = "navBar">
+            <a class = "entry" href="">CONTACT</a>
+            <a class = "entry" style = "right: 230px;" href = "Moinaks-Resume.pdf">RESUME</a>
+            <a class = "entry" style = "right: 376px;" href="">SOFTWARE</a>
         </div>
-        <div class = "nextText"><img id = "nextArrow">How Can I Help You?<img id = "nextArrow"></div>
-    </div>
-    <div id = "openingPage" style = "Padding-left:40px; padding-top: 80px; height: 1600px;">
-        <div id = "AboutMeTitle">Let's Create Things<span style = "color:#ec3939;margin-left:3px">.</span></div>
-        <hr style = "width:350px; margin-left:0px; height:0px; border: 0.5px #f6f8fd solid; background-color: #f6f8fd;">
-        <p style = "width: 80%; max-width: 800px;margin-top:30px;letter-spacing:0.05em;font-size: 16px;line-height:1.75;">
-        I'm a software and full stack web developer based in New York City, and a Mechanical Engineering student at
-        Stony Brook University. Over the course of three years, I've had the pleasure of working with numerous organizations 
-        to improve online presence, conduct regular website maintenence and troubleshooting, implement software solutions to 
-        streamline workflow, and train interns. I've also had the privilege of working with organizations to tutor children in 
-        underserved communities. My skills make me a capable K-12 tutor for STEM courses.
-        <br>
-        <div style = "height: 30px;"></div>
-        <span style = "white-space: nowrap;">
-            <a class = "openingButton" id = "bu8" style = "background-color: #4973ff; padding-right: 20px;margin-left: 0px;" href = "Resume_MoinakDas.pdf">Download My Resume</a>
-            <!--<a class = "openingButton" id = "bu9" style = "background-color: #4973ff; padding-right: 20px; margin-top:20px;">Hire Me!</a>-->
-        </span>
-        <!--
-        I've implemented software solutions written in python, javascript, PHP, java, and C#. I also have experience with the Unity 
-        Game Engine, Wordpress, and Android Studio.-->
-        </p>
-        <p style = "width: 80%; max-width: 800px;margin-top:30px;letter-spacing:0.05em;font-size: 16px;line-height:1.75;"></p>
-        <img id = "phoneScreen">
-        <img id = "arduino">
-        <!--<div id = "parallax"></div>-->
-        <div style = "height: 5em;"></div>
-        <div id = "testimonial">
-            "Mr. Das made the website more user friendly for our team, who has little knowledge of
-            computer language and codes. Moinak is a very competent young man who can analyze the tasks
-            needed to accomplish a goal. We want to thank Moinak for his work and look forward to having 
-            him intern with us again"<br> <span style = "font-family: PTSans; font-size: 18px;margin-left: 70px">- Debbie Van Cura, 
-            The Greater Astoria Historical Society</span>
-        </div>
-        <div style = "display: flex; width: 800px;max-width: 800px; padding-top:50px;margin-left:0px;">
-            <div style = "flex:1.00;padding-left: 0px;">
-                <img src = "images/GAHS.PNG" style = "position: relative; margin-top: 2px; width: 200px;">
-                <img src = "images/NYYTT.PNG" style = "position: relative; margin-top: 2px; width: 200px;"><br>
-                <img src = "images/STS.PNG" style = "position: relative; margin-top: 2px; width: 200px;">
-                <img src = "images/spec.png" style = "position: relative; margin-top: 0px; width: 200px;">
+        <div id="tagLine1">MOINAK DAS IS THE</div>
+        <img id = "mechEoff">
+        <img id = "mechEon">
+        <div id = "marker2"></div>
+        <!--<div id="tagLine2">MECHANICAL ENGINEER</div>-->
+        <div id="tagLine3">FOR YOUR NEXT PROJECT</div>
+        <img id = "pipe_001">
+        <img id = "startStop">
+        <img id = "startStop2">
+        <img id = "startStop3">
+        <img id = "startLight">
+        <img id = "icon1">
+        <img id = "icon2">
+        <img id = "icon3">
+        <img id = "icon4">
+        <img id = "icon5">
+        <a href = "Moinaks-Resume.pdf"><img id = "icon1On"></a>
+        <a href = "https://www.linkedin.com/in/moinak-das-1708031b4"><img id = "icon2On"></a>
+        <a href = "https://sadkoi.itch.io/"><img id = "icon3On"></a>
+        <a href = "https://github.com/Sadkoi"><img id = "icon4On"></a>
+        <a href = "https://www.artstation.com/moinakdas"><img id = "icon5On"></a>
+        <img id = "pipe_002">
+        <img id = "screenGlare">
+        <img id = "forward">
+        <img id = "backward">
+        <div id = "marker"></div>
+        <div id = "arduinoScreen">
+            <div id = "loadScene">
+                Skills Loading...
             </div>
-            <div style = "flex: 0.95;">
-                <img src = "images/MarniH.PNG" style = "position: relative; margin-top: 2px; height: 100px;">
-                <img src = "images/SSS.PNG" style = "position: relative; margin-top: 2px; height: 100px;">
-                <img src = "images/SU.png" style = "position: relative; margin-top: 2px; height: 100px;">
+            <div id = "loadBorder"></div>
+            <div id = "progressBar"></div>
+            
+            <div id = "skillsTab">
+                <div class = "skill">
+                    <div class = "skillTitle">Fusion<br> 360</div>
+                    <div class = "progLabel">4+ years of experience</div>
+                    <div class = "backCover"></div>
+                    <svg style = "height: 100%; width: 100%">
+                        <circle r="4vw" stroke-linecap="round" id = "circle1"></circle>
+                    </svg>
+                </div>
+                <div class = "skill">
+                    <div class = "skillTitle">Autodesk<br> Inventor</div>
+                    <div class = "progLabel">4+ years of experience</div>
+                    <div class = "backCover"></div>
+                    <svg style = "height: 100%; width: 100%">
+                        <circle r="4vw" stroke-linecap="round" id = "circle2"></circle>
+                    </svg>
+                </div>
+                <div class = "skill">
+                    <div class = "skillTitle">Arduino<br> IDE</div>
+                    <div class = "progLabel">2+ years of experience</div>
+                    <div class = "backCover"></div>
+                    <svg style = "height: 100%; width: 100%">
+                        <circle r="4vw" stroke-linecap="round" id = "circle3"></circle>
+                    </svg>
+                </div>
+                <div class = "skill">
+                    <div class = "skillTitle">LabView</div>
+                    <div class = "progLabel">1 year of experience</div>
+                    <div class = "backCover"></div>
+                    <svg style = "height: 100%; width: 100%">
+                        <circle r="4vw" stroke-linecap="round" id = "circle4"></circle>
+                    </svg>
+                </div>
+                <div class = "skill">
+                    <div class = "skillTitle">MATLAB</div>
+                    <div class = "progLabel">2+ years of experience</div>
+                    <div class = "backCover"></div>
+                    <svg style = "height: 100%; width: 100%">
+                        <circle r="4vw" stroke-linecap="round" id = "circle5"></circle>
+                    </svg>
+                </div>
+                <div class = "skill">
+                    <div class = "skillTitle">Python</div>
+                    <div class = "progLabel">5+ years of experience</div>
+                    <div class = "backCover"></div>
+                    <svg style = "height: 100%; width: 100%">
+                        <circle r="4vw" stroke-linecap="round" id = "circle6"></circle>
+                    </svg>
+                </div>
+                <div class = "skill">
+                    <div class = "skillTitle">Java</div>
+                    <div class = "progLabel">4+ years of experience</div>
+                    <div class = "backCover"></div>
+                    <svg style = "height: 100%; width: 100%">
+                        <circle r="4vw" stroke-linecap="round" id = "circle7"></circle>
+                    </svg>
+                </div>
+                <div class = "skill">
+                    <div class = "skillTitle">C#</div>
+                    <div class = "progLabel">4+ years of experience</div>
+                    <div class = "backCover"></div>
+                    <svg style = "height: 100%; width: 100%">
+                        <circle r="4vw" stroke-linecap="round" id = "circle8"></circle>
+                    </svg>
+                </div>
+                <div class = "skill">
+                    <div class = "skillTitle">HTML &<br>CSS</div>
+                    <div class = "progLabel">4+ years of experience</div>
+                    <div class = "backCover"></div>
+                    <svg style = "height: 100%; width: 100%">
+                        <circle r="4vw" stroke-linecap="round" id = "circle9"></circle>
+                    </svg>
+                </div>
+                <div class = "skill">
+                    <div class = "skillTitle">Java-<br>Script</div>
+                    <div class = "progLabel">3+ years of experience</div>
+                    <div class = "backCover"></div>
+                    <svg style = "height: 100%; width: 100%">
+                        <circle r="4vw" stroke-linecap="round" id = "circle10"></circle>
+                    </svg>
+                </div>
+                <div class = "skill">
+                    <div class = "skillTitle">MySQL</div>
+                    <div class = "progLabel">4+ years of experience</div>
+                    <div class = "backCover"></div>
+                    <svg style = "height: 100%; width: 100%">
+                        <circle r="4vw" stroke-linecap="round" id = "circle11"></circle>
+                    </svg>
+                </div>
+                <div class = "skill">
+                    <div class = "skillTitle">PHP</div>
+                    <div class = "progLabel">4+ years of experience</div>
+                    <div class = "backCover"></div>
+                    <svg style = "height: 100%; width: 100%">
+                        <circle r="4vw" stroke-linecap="round" id = "circle12"></circle>
+                    </svg>
+                </div>
+                <div class = "skill">
+                    <div class = "skillTitle">Blender</div>
+                    <div class = "progLabel">4+ years of experience</div>
+                    <div class = "backCover"></div>
+                    <svg style = "height: 100%; width: 100%">
+                        <circle r="4vw" stroke-linecap="round" id = "circle14"></circle>
+                    </svg>
+                </div>
             </div>
         </div>
-        <img src = "images/icons/AndroidStudio.png" style = "position: absolute;top: 950px;left: calc(50% - 310px);height: 100px;">
-        <img src = "images/icons/WordPress.png" style = "position: absolute;top: 950px;left: calc(50% - 210px);height: 100px;">
-        <img src = "images/icons/Unity.png" style = "position: absolute;top: 950px;left: calc(50% - 103px);height: 100px;">
-        <img src = "images/icons/jQuery.png" style = "position: absolute;top: 950px;left:calc(50% + 0px);height: 100px;">
-        <img src = "images/icons/Blender.png" style = "position: absolute;top: 950px;left:calc(50% + 115px);height: 100px;">
-        <p style = "position: absolute; width: 80%;letter-spacing:0.05em;font-size: 16px; line-height:1.75;left: 5%;top:1100px;text-align: center;">
-            My technical skills include experience with: Android Studio, WordPress, JQuery, Unity, Blender, Fusion 360, and Django. I am able to
-            implement software solutions written in Python, Java, C#, PHP, HTML, CSS, and Javascript.
-            <br>
-        </p>
-        
-        <div style = "position: absolute; top: 1300px; left: 450px; width: 55%;letter-spacing:0.05em;font-size: 16px;line-height:1.75;">
-        As a Mechanical Engineering student, I also have experience with 3D modelling and AutoCAD. I have four years of experience
-        with Autodesk Inventor, Fusion 360, and Blender. Furthermore, I have experience with Arduino wiring and 
-        software development, as well as being able to complete large engineering projects under tight deadlines.<br>
-        <div style = "height: 30px;"></div>
-        <!--<a class = "openingButton" id = "bu10" style = "background-color: #4973ff; padding-right: 20px;margin-left: 0px;">View CAD Portfolio</a>
-        <a class = "openingButton" id = "bu11" style = "background-color: #4973ff; padding-right: 20px;margin-left: 0px;margin-top:30px;">See My Latest Projects</a>-->
-        </div>  
-    </div>
-    <div id = "openingPage" style = "height: 600px;padding:60px;background-color: #15161b;">
-        <img src = "images/gradPicT3.png" style = "position: absolute; top: 0px; right: 60px; height: 680px;">
-        <div id = "AboutMeTitle" style = "font-family: PTSans;color: #f6f8fd;">Education</div>
-        <hr style = "width:210px; margin-left:3px; height:0px; border: 0.5px #f6f8fd solid; background-color: #f6f8fd; margin-top: 0px;">
-        <p style = "width: 80%; max-width: 800px;margin-top:60px;letter-spacing:0.05em;font-size: 18px;line-height:1.75; color: #f6f8fd; margin-left:3px;">
-            <span style = "font-family:PTSansBOLD;font-size:19px;">Stony Brook University</span>
-            <span style = "font-family:PTSans;font-size:16px;">	&#8212; Long Island, New York</span><br>
-            <span style = "font-family:PTSans;font-size:18px;">B.E Mechanical Engineering</span>
-            <br>
-            <span style = "font-family:PTSansITALIC;font-size:15px;margin-top:-20px;">(2021 - 2025)</span>
-            <br><br>
-            <span style = "font-family:PTSansBOLD;font-size:19px;">Stuyvesant High School</span>
-            <span style = "font-family:PTSans;font-size:16px;">	&#8212; Manhattan, New York</span><br>
-            <span style = "font-family:PTSans;font-size:18px;">IntroCS, AP Computer Science, Artificial Intelligence</span>
-            <br>
-            <span style = "font-family:PTSansITALIC;font-size:15px;margin-top:-20px;">(2018 - 2021)</span>
-            <br><br>
-            <span style = "font-family:PTSansBOLD;font-size:19px;">Brooklyn Technical High School</span>
-            <span style = "font-family:PTSans;font-size:16px;">	&#8212; Brooklyn, New York</span><br>
-            <span style = "font-family:PTSans;font-size:18px;">Designing and Drafting For Production</span>
-            <br>
-            <span style = "font-family:PTSansITALIC;font-size:15px;margin-top:-20px;">(2017 - 2018)</span>
-        </p>
-        <div class = "nextText" style = "position: absolute; top: 685px;"><img id = "nextArrow">Experience<img id = "nextArrow"></div>
-    </div>
-    <div id = "openingPage" style = "display: flex; height: 720px;background-color: #f6f8fd">
-        <div style = "flex: 0.8; background-color: #f6f8fd;padding:60px;">
-            <div id = "AboutMeTitle" style = "font-family: PTSansBOLD;color: #15161b;width:100%;
-            z-index: 9;min-width: 400px;padding-left:0px">Greater Astoria<br> Historical Society</div>
-            <hr style = "width:210px; margin-left:3px; height:0px; border: 1px #15161b solid; background-color: #15161b; margin-top: 5px;"><br>
-            <p style = "font-family: PTSans;color: #15161b;width:100%;z-index: 9;min-width: 400px;padding-left:0px; font-size:16px; margin-top:-20px;
-            margin-bottom: 40px;">
-                <span style = "font-family: PTSansBOLD; font-size:20px;">Software Developer</span><br>
-                <span style = "font-family: PTSansITALIC; font-size:14px;">(May 2019 - August 2020)</span><br>
-            </p>
-            <p style = "font-family: PTSans;color: #15161b;width:100%;z-index: 9;min-width: 400px;padding-left:0px; font-size:16px;">
-                Developed wordpress plugins using PHP to streamline website submission processes<br><br>
-                Designed new origanization website that tripled user traffic<br><br>
-                Created software to automate day-to-day tasks and complete them in a fraction of their original time<br><br>
-                Involved in the development and design of PC and mobile applications<br><br>
-                Used Android Studio and Unity to develop prototypes for these applications<br><br>
-                Effectively communicate ideas through powerpoints and written documents
-            </p>
-        </div>
-        <div style = "flex: 1.2;background-color: #f6f8fd;">
-            <img src = "images/node.png" style = "height: 40px; position: absolute; top: 150px; left: 700px;">
-            <hr style = "background-color: #15161b; border: 1px #15161b solid; width: 10px; height: 600px; position: absolute; top: 175px; left: 714px;">
-            <img src = "images/node.png" style = "height: 40px; position: absolute; top: 480px; left: 880px;">
-            <hr style = "background-color: #15161b; border: 1px #15161b solid; width: 170px; height: 10px; position: absolute; top: 488px; left: 714px;">
-            <img src = "images/ApprovalSys1.png" style = "height: 230px; position: absolute; top: 60px; left: 780px;">
-            <img src = "images/GAHS3.PNG" style = "height: 230px; position: absolute; top: 400px; left: 950px;">
-        </div>
-    </div>
-    <div id = "openingPage" style = "display: flex; height: 720px;">
-        <div style = "flex: 0.8; background-color: #f6f8fd;padding:60px;">
-            <div id = "AboutMeTitle" style = "font-family: PTSansBOLD;color: #15161b;width:100%;
-            z-index: 9;min-width: 400px;padding-left:0px">Marni Halasa<br> For City Council</div>
-            <hr style = "width:210px; margin-left:3px; height:0px; border: 1px #15161b solid; background-color: #15161b; margin-top: 5px;"><br>
-            <p style = "font-family: PTSans;color: #15161b;width:100%;z-index: 9;min-width: 400px;padding-left:0px; font-size:16px; margin-top:-20px;
-            margin-bottom: 40px;">
-                <span style = "font-family: PTSansBOLD; font-size:20px;">Senior Web Developer</span><br>
-                <span style = "font-family: PTSansITALIC; font-size:14px;">(September 2020 - January 2021)</span><br>
-            </p>
-            <p style = "font-family: PTSans;color: #15161b;width:100%;z-index: 9;min-width: 400px;padding-left:0px; font-size:16px;">
-                Developed new website to promote the campaign<br><br>
-                Successfully managed a team of two Junior Web Developers<br><br>
-                Trained staff members on how to use Wordpress plugins and independently make minor changes to the website<br><br>
-                Create responsive UIs on both PC and mobile platforms<br><br>
-                Worked with client to create a user experience representative of the brand<br><br>
-            </p>
-        </div>
-        <div style = "flex: 1.2;background-color: #f6f8fd;">
-            <hr style = "background-color: #15161b; border: 1px #15161b solid; width: 10px; height: 740px; position: absolute; top: -30px; left: 714px;">
-            <img src = "images/node.png" style = "height: 40px; position: absolute; top: 135px; left: 880px;">
-            <hr style = "background-color: #15161b; border: 1px #15161b solid; width: 170px; height: 10px; position: absolute; top: 143px; left: 714px;">
-            <hr style = "background-color: #15161b; border: 1px #15161b solid; width: 170px; height: 10px; position: absolute; top: 488px; left: 714px;">
-            <img src = "images/node.png" style = "height: 40px; position: absolute; top: 480px; left: 880px;">
-            <hr style = "background-color: #15161b; border: 1px #15161b solid; width: 170px; height: 10px; position: absolute; top: 488px; left: 714px;">
-            <img src = "images/MHss2.jpg" style = "height: 230px; position: absolute; top: 400px; left: 950px;">
-            <img src = "images/MHss1.jpg" style = "height: 230px; position: absolute; top: 40px; left: 950px;">
-        </div>
-    </div>
-    <div id = "openingPage" style = "display: flex; height: 400px;">
-        <div style = "flex: 0.8; background-color: #f6f8fd;padding:60px;">
-            <div id = "AboutMeTitle" style = "font-family: PTSansBOLD;color: #15161b;width:100%;
-            z-index: 9;min-width: 400px;padding-left:0px">Student Union<br> IT Department</div>
-            <hr style = "width:210px; margin-left:3px; height:0px; border: 1px #15161b solid; background-color: #15161b; margin-top: 5px;"><br>
-            <p style = "font-family: PTSans;color: #15161b;width:100%;z-index: 9;min-width: 400px;padding-left:0px; font-size:16px; margin-top:-20px;
-            margin-bottom: 40px;">
-                <span style = "font-family: PTSansBOLD; font-size:20px;">IT Technician</span><br>
-                <span style = "font-family: PTSansITALIC; font-size:14px;">(September 2019 - January 2020)</span><br>
-            </p>
-            <p style = "font-family: PTSans;color: #15161b;width:100%;z-index: 9;min-width: 400px;padding-left:0px; font-size:16px;">
-                Managed IT help desk for the Student Union website<br><br>
-                Managed the Student Union Website, helped brainstorm new features during meetings<br><br>
 
-            </p>
+        <div id = "aboutMe">
+            <a class = "title">Experience & Education</a>
+            <hr style = "width:16vw; margin-left:0px; height:0px; border: 1px #B2B8B9 solid; background-color: #B2B8B9;">
+            <a class = "description">
+                Over the past two years, I've been involved in projects ranging from creating Arduino robots to 
+                adapting ride on toys for children with Cerebral Palsy. Through these experiences, I've proven my 
+                ability to <b>rapidly prototype mechanical designs, troubleshoot electrical components, and develop 
+                lightweight, efficient software</b> all in a high-pressure environment.<br><br>
+
+                I'm also a software developer based in New York City, and over the course of four years, I've had 
+                the pleasure of working with nonprofit organizations to develop websites, conduct regular maintenance 
+                and troubleshooting, and implement software solutions to streamline workflow.<br><br>
+                
+                In 2025, I will graduate from Stony Brook University with a B.E. in Mechanical Engineering. 
+            </a>
         </div>
-        <div style = "flex: 1.2;background-color: #f6f8fd;">
-            <hr style = "background-color: #15161b; border: 1px #15161b solid; width: 10px; height: 440px; position: absolute; top: -30px; left: 714px;">
-            <img src = "images/node.png" style = "height: 40px; position: absolute; top: 135px; left: 880px;">
-            <hr style = "background-color: #15161b; border: 1px #15161b solid; width: 170px; height: 10px; position: absolute; top: 143px; left: 714px;">
-            <img src = "images/StuyActivities.PNG" style = "height: 230px; position: absolute; top: 40px; left: 950px;">
+        <img id = "gradPic">
+        <img id = "pipe_003">
+        <img id = "t555Timer">
+        <div id="container">
+            
+            <div id = "mechanical" style = "">
+                <img class = "backimg">
+                <img class = "centerIcon">
+                <div class = "description2" style = "font-size:1.2vw;line-height: 1.6vw;">
+                    Mechanical Systems
+                </div>
+                <div class = "description2" style = "font-size:1.1vw;line-height: 1.5vw;text-align: left;">
+                    I have a strong background in manufacturing processes, 
+                    stress analysis, and 3D printing techniques. I'm also experienced in several 3D modeling programs, 
+                    such as:
+                </div>
+                <div class = "description2" style = "font-size:1.1vw;line-height: 1.8vw;text-align: left;">
+                    &#8226 Autodesk Inventor Professional<br>
+                    &#8226 Autodesk Fusion 360<br>
+                    &#8226 SolidWorks<br>
+                    &#8226 Blender<br>
+                </div>
+            </div>
+            <div id = "electrical" style = "">
+                <img class = "backimg" style = "content:url('images/EEBorder.png')">
+                <img class = "centerIcon" style = "content:url('images/plugIcon.png')">
+                <div class = "description2" style = "font-size:1.2vw;line-height: 1.6vw;">
+                    Electrical Systems
+                </div>
+                <div class = "description2" style = "font-size:1.1vw;line-height: 1.5vw;text-align: left;">
+                    Through hands-on experience relating to electrical systems, I have a thorough understanding of 
+                    both circuit design and analysis. Here are some of the technologies I've worked with:
+                </div>
+                <div class = "description2" style = "font-size:1.1vw;line-height: 1.8vw;text-align: left;">
+                    &#8226 Arduino<br>
+                    &#8226 LabView<br>
+                    &#8226 CircuitLab<br>
+                </div>
+            </div>
+            <div id = "software" style = "">
+                <img class = "backimg" style = "content:url('images/CSBorder.png')">
+                <img class = "centerIcon" style = "content:url('images/CSicon.png')">
+                <div class = "description2" style = "font-size:1.2vw;line-height: 1.6vw;">
+                    Software Development
+                </div>
+                <div class = "description2" style = "font-size:1.1vw;line-height: 1.5vw;text-align: left;">
+                    Aside from my Mechanical Engineering Career, I'm a software developer in New York City. 
+                    These are some of the languages I'm proficient in:
+                </div>
+                <div class = "description2" style = "font-size:1.1vw;line-height: 1.8vw;text-align: left;">
+                    &#8226 MATLAB<br>
+                    &#8226 Python<br>
+                    &#8226 Java<br>
+                    &#8226 C#<br>
+                    &#8226 XML, HTML & CSS<br>
+                    &#8226 JavaScript<br>
+                    &#8226 PHP<br>
+                    &#8226 Arduino<br>
+                </div>
+            </div>
+            <!--<img id = "border1">-->
+        </div>
+        <img id = "pipe_004">
+        <img id = "asmePhoto">
+        <div class = "container2">
+            
+            <div class = "jobEntry" style = "margin-bottom: 19vw;" id = "jobEntry1">
+                <a class = "title" style = "position: relative;"><b>TC Electric</b></a>
+                <hr style = "position: relative; width:14vw; margin-left:0px; height:0px; 
+                border: 1px #B2B8B9 solid; background-color: #B2B8B9;">
+                <a class = "description" style = "position: relative;">
+                    <b style = "font-size:1.2vw;line-height: 2vw;">Field Engineer Intern</b><br>
+                    <i>(May 2023 - Present)</i>
+                </a>
+            </div>
+            <div class = "jobEntry" style = "margin-bottom: 10vw;" id = "jobEntry2" >
+                <a class = "title" style = "position: relative;"><b>American Society Of Mechanical Engineers</b></a>
+                <hr style = "position: relative; width:14vw; margin-left:0px; height:0px; 
+                border: 1px #B2B8B9 solid; background-color: #B2B8B9;">
+                <a class = "description" style = "position: relative;">
+                    <b style = "font-size:1.2vw;line-height: 2vw;">President</b><br>
+                    <i>(May 2022 - January 2023)</i><br><br>
+                    Designed and deployed a new website for the club using Heroku<br><br>
+                    Used HTML, CSS, JavaScript, and JQuery to develop a responsive front 
+                    end that responds to different device sizes<br><br>
+                    Use PHP to create self-updating content on the home page<br><br>
+                    Complete search engine optimization and penetration testing to 
+                    make sure that the website is secure and visible.<br><br>
+                    Plan events on and off campus to increase organization popularity 
+                    and member retention<br><br>
+                    Maintain relations with ASME contacts such as Long Island Power Plants, 
+                    industry professionals and Stony Brook Alumni<br><br>
+                </a>
+            </div>
+            <div class = "jobEntry" style = "margin-bottom: 6vw;" id = "jobEntry3" >
+                <a class = "title" style = "position: relative;"><b>Stony Brook Motorsports</b></a>
+                <hr style = "position: relative; width:14vw; margin-left:0px; height:0px; 
+                border: 1px #B2B8B9 solid; background-color: #B2B8B9;">
+                <a class = "description" style = "position: relative;">
+                    <b style = "font-size:1.2vw;line-height: 2vw;">Mechanical Engineer</b><br>
+                    <i>(August 2021 - December 2021)</i><br><br>
+                    Worked with a team to design, develop, build, and test a vehicle for the Baja SAE competition<br><br>
+                </a>
+            </div>
+            <div class = "jobEntry" style = "margin-bottom: 5vw;" id = "jobEntry4" >
+                <a class = "title" style = "position: relative;"><b>ID Tech Camps</b></a>
+                <hr style = "position: relative; width:14vw; margin-left:0px; height:0px; 
+                border: 1px #B2B8B9 solid; background-color: #B2B8B9;">
+                <a class = "description" style = "position: relative;">
+                    <b style = "font-size:1.2vw;line-height: 2vw;">Online Private Learning Instructor</b><br>
+                    <i>(May 2022 - Present)</i><br><br>
+                    Taught one-on-one courses at both middle school and high school levels<br><br>
+                    Taught classes in Web Development, Game Development, C#, Java, 3D modeling, 
+                    Mental Math, Algebra, Geometry, and Calculus<br><br>
+                    Wrote daily session reports for each student to keep parents informed 
+                    of their child's progress and improve client retention.<br><br>
+                    Created lesson plans catered to each individual student<br><br>
+                </a>
+            </div>
+            <div class = "jobEntry" style = "margin-bottom: 7vw;" id = "jobEntry5" >
+                <a class = "title" style = "position: relative;"><b>Marni Halasa<br> For City Council</b></a>
+                <hr style = "position: relative; width:14vw; margin-left:0px; height:0px; 
+                border: 1px #B2B8B9 solid; background-color: #B2B8B9;">
+                <a class = "description" style = "position: relative;">
+                    <b style = "font-size:1.2vw;line-height: 2vw;">Senior Web Developer</b><br>
+                    <i>(September 2020 - January 2021)</i><br><br>
+                    Designed, developed, and deployed a new website for the campaign using WordPress<br><br>
+                    Successfully managed a team of two Junior Web Developers<br><br>
+                    Trained staff members on how to use WordPress plugins and independently 
+                    make changes to the website<br><br>
+                    Create responsive UIs on both PC and mobile platforms<br><br>
+                    Worked with client to create a user experience representative 
+                    of the brand<br><br>
+                </a>
+            </div>
+            <div class = "jobEntry" style = "margin-bottom: 7vw;" id = "jobEntry6" >
+                <a class = "title" style = "position: relative;"><b>New York Youth Technology Team</b></a>
+                <hr style = "position: relative; width:14vw; margin-left:0px; height:0px; 
+                border: 1px #B2B8B9 solid; background-color: #B2B8B9;">
+                <a class = "description" style = "position: relative;">
+                    <b style = "font-size:1.2vw;line-height: 2vw;">Computer Science Instructor</b><br>
+                    <i>(June 2020 - November 2020)</i><br><br>
+                    Created Lessons and projects for students in middle school<br><br>
+                    Taught children how to code in python using if statements, loops, 
+                    recursion and other techniques.<br><br>
+                    Graded homework and classwork<br><br>
+                </a>
+            </div>
+            <div class = "jobEntry" style = "margin-bottom: 10vw;" id = "jobEntry7" >
+                <a class = "title" style = "position: relative;"><b>Greater Astoria Historical Society</b></a>
+                <hr style = "position: relative; width:14vw; margin-left:0px; height:0px; 
+                border: 1px #B2B8B9 solid; background-color: #B2B8B9;">
+                <a class = "description" style = "position: relative;">
+                    <b style = "font-size:1.2vw;line-height: 2vw;">Software Developer</b><br>
+                    <i>(May 2019 - August 2020)</i><br><br>
+                    Developed WordPress plugins using PHP to streamline website submission processes<br><br>
+                    Designed new organization website that tripled user traffic<br><br>
+                    Created software to automate day-to-day tasks, completing weeks' worth of work in a few minutes<br><br>
+                    Designed a python program to parse spreadsheets of over 22,000 addresses and convert each to a code used for filing<br><br>
+                    Designed a Java program to upscale scanned images of maps and automatically clean up imperfections<br><br>
+                </a>
+            </div>
+            <div class = "jobEntry" style = "margin-bottom: 10vw;" id = "jobEntry8" >
+                <a class = "title" style = "position: relative;"><b>Student Union IT Department</b></a>
+                <hr style = "position: relative; width:14vw; margin-left:0px; height:0px; 
+                border: 1px #B2B8B9 solid; background-color: #B2B8B9;">
+                <a class = "description" style = "position: relative;">
+                    <b style = "font-size:1.2vw;line-height: 2vw;">IT Technician</b><br>
+                    <i>(September 2019 - January 2020)</i><br><br>
+                    Worked with a team to add features to and update Student Union website<br><br>
+                    Managed IT help desk for the Student Union website<br><br>
+                </a>
+            </div>
         </div>
     </div>
-    <div id = "openingPage" style = "display: flex; height: 400px;">
-        <div style = "flex: 0.8; background-color: #f6f8fd;padding:60px;">
-            <div id = "AboutMeTitle" style = "font-family: PTSansBOLD;color: #15161b;width:100%;
-            z-index: 9;min-width: 400px;padding-left:0px">Stuyvesant Spectator<br> Web Department</div>
-            <hr style = "width:210px; margin-left:3px; height:0px; border: 1px #15161b solid; background-color: #15161b; margin-top: 5px;"><br>
-            <p style = "font-family: PTSans;color: #15161b;width:100%;z-index: 9;min-width: 400px;padding-left:0px; font-size:16px; margin-top:-20px;
-            margin-bottom: 40px;">
-                <span style = "font-family: PTSansBOLD; font-size:20px;">Content Manager</span><br>
-                <span style = "font-family: PTSansITALIC; font-size:14px;">(January 2019 - June 2020)</span><br>
-            </p>
-            <p style = "font-family: PTSans;color: #15161b;width:100%;z-index: 9;min-width: 400px;padding-left:0px; font-size:16px;">
-                Responsible for submissions of articles to the school newspaper website<br><br>
-            </p>
+    <div id = "mobile">
+        <img id = "mobileMecOff">
+        <img id = "mobileMecOn">
+        <div class = "topView">MOINAK DAS IS THE</div>
+        <div class = "topView" style = "top: 62vw; left: 65%; width: 35%; text-align: center;">
+            FOR YOUR NEXT<br> PROJECT
         </div>
-        <div style = "flex: 1.2;background-color: #f6f8fd;">
-            <hr style = "background-color: #15161b; border: 1px #15161b solid; width: 10px; height: 440px; position: absolute; top: -30px; left: 714px;">
-            <img src = "images/node.png" style = "height: 40px; position: absolute; top: 135px; left: 880px;">
-            <hr style = "background-color: #15161b; border: 1px #15161b solid; width: 170px; height: 10px; position: absolute; top: 143px; left: 714px;">
-            <img src = "images/Stuy_Spectator.jpg" style = "height: 230px; position: absolute; top: 40px; left: 950px;">
+        <img id = "speedNeedle">
+        <img id = "pipeM_001">
+        <img id = "startStopM1">
+        <img id = "startStopM3">
+        <img id = "menuButton">
+        <!-- MOBILE HAMBURGER MENU -->
+        <div id = "blurFilter">
         </div>
-    </div>
-    <div id = "openingPage" style = "display: flex; height: 380px;">
-        <div style = "flex: 1; background-color: #f6f8fd;padding:60px;">
-            <div id = "AboutMeTitle" style = "font-family: PTSansBOLD;color: #15161b;width:100%;
-            z-index: 9;min-width: 400px;padding-left:0px">Stuyvesant Study<br> Society</div>
-            <hr style = "width:210px; margin-left:3px; height:0px; border: 1px #15161b solid; background-color: #15161b; margin-top: 5px;"><br>
-            <p style = "font-family: PTSans;color: #15161b;width:100%;z-index: 9;min-width: 400px;padding-left:0px; font-size:16px; margin-top:-20px;
-            margin-bottom: 20px;">
-                <span style = "font-family: PTSansBOLD; font-size:20px;">Private Tutor</span><br>
-                <span style = "font-family: PTSansITALIC; font-size:14px;">(September 2020 - January 2021)</span><br>
-            </p>
-            <p style = "font-family: PTSans;color: #15161b;width:100%;z-index: 9;min-width: 400px;padding-left:0px; font-size:16px;">
-                One on one tutoring with a fourth grade student for elementary-level math<br><br>
-            </p>
+        <div id = "mobileMenu">
+            <a class = "mobileNav" href = "">SOFTWARE</a>
+            <a class = "mobileNav" href = "Moinaks-Resume.pdf">RESUME</a>
+            <a class = "mobileNav" href = "https://www.linkedin.com/in/moinak-das-1708031b4">LINKEDIN</a>
+            <a class = "mobileNav" href = "https://github.com/Sadkoi">GITHUB</a>
+            <a class = "mobileNav" href = "https://sadkoi.itch.io/">ITCH.IO</a>
+            <a class = "mobileNav" href = "https://www.artstation.com/moinakdas">ARTSTATION</a>
         </div>
-        <div style = "flex: 1;background-color: #f6f8fd;padding:60px;">
-            <hr style = "background-color: #15161b; border: 1px #15161b solid; width: 10px; height: 440px; position: absolute; top: -30px; left: 714px;">
-            <img src = "images/node.png" style = "height: 40px; position: absolute; top: 135px; left: 880px;">
-            <hr style = "background-color: #15161b; border: 1px #15161b solid; width: 170px; height: 10px; position: absolute; top: 143px; left: 714px;">
-            <img src = "images/StuyStudyS.PNG" style = "height: 230px; position: absolute; top: 40px; left: 950px;">
+        <img id = "icon1M">
+        <img id = "icon2M">
+        <img id = "icon3M">
+        <img id = "icon4M">
+        <img id = "icon5M">
+        <a href = "Moinaks-Resume.pdf"><img id = "icon1OnM"></a>
+        <a href = "https://www.linkedin.com/in/moinak-das-1708031b4"><img id = "icon2OnM"></a>
+        <a href = "https://sadkoi.itch.io/"><img id = "icon3OnM"></a>
+        <a href = "https://github.com/Sadkoi"><img id = "icon4OnM"></a>
+        <a href = "https://www.artstation.com/moinakdas"><img id = "icon5OnM"></a>
+        <img id = "pipeM_002">
+        <img id = "pfp001">
+        <div id = "aboutMeMobile">
+            <a class = "titleM">Experience &<br> Education</a>
+            <hr style = "width:16vw; margin-left:0px; height:0px; border: 0.5px #B2B8B9 solid; background-color: #B2B8B9;">
+            <a class = "descriptionM">
+                Over the past two years, I've been involved in projects ranging from creating Arduino robots to 
+                adapting ride on toys for children with Cerebral Palsy. Through these experiences, I've proven my 
+                ability to <b>rapidly prototype mechanical designs, troubleshoot electrical components, and develop 
+                lightweight, efficient software</b> all in a high-pressure environment.<br><br>
+
+                I'm also a software developer based in New York City, and over the course of four years, I've had 
+                the pleasure of working with nonprofit organizations to develop websites, conduct regular maintenance 
+                and troubleshooting, and implement software solutions to streamline workflow.<br><br>
+                
+                In 2025, I will graduate from Stony Brook University with a B.E. in Mechanical Engineering. 
+            </a>
         </div>
-    </div>
-    <div id = "openingPage" style = "display: flex; height: 400px;">
-        <div style = "flex: 0.8; background-color: #f6f8fd;padding:60px;">
-            <div id = "AboutMeTitle" style = "font-family: PTSansBOLD;color: #15161b;width:100%;
-            z-index: 9;min-width: 400px;padding-left:0px">New York Youth<br> Technology Team</div>
-            <hr style = "width:210px; margin-left:3px; height:0px; border: 1px #15161b solid; background-color: #15161b; margin-top: 5px;"><br>
-            <p style = "font-family: PTSans;color: #15161b;width:100%;z-index: 9;min-width: 400px;padding-left:0px; font-size:16px; margin-top:-20px;
-            margin-bottom: 40px;">
-                <span style = "font-family: PTSansBOLD; font-size:20px;">Tutor</span><br>
-                <span style = "font-family: PTSansITALIC; font-size:14px;">(June 2020 - September 2020)</span><br>
-            </p>
-            <p style = "font-family: PTSans;color: #15161b;width:100%;z-index: 9;min-width: 400px;padding-left:0px; font-size:16px;">
-                Taught children aged 11 – 14 how to code in python<br><br>
-                Created engaging lesson plans based on problem-solving and technique, cultivating 
-                a broader understanding of programming languages.<br><br>
-            </p>
+        <div class = "mechanicalM" id = "MME">
+            <img class = "centerIconM">
+            <div class = "descriptionM2">Mechanical Systems</div>
+            <div class = "descriptionM2" style = "top: 85vw; width: 60%; text-align: left; left: 20%; font-size: 3.5vw;">
+                I have a strong background in manufacturing processes, 
+                stress analysis, and 3D printing techniques. I'm also experienced in several 3D modeling programs, 
+                such as:
+            </div>
+            <div class = "descriptionM2" style = "top: 120vw; width: 60%; text-align: left; left: 20%; font-size: 3.5vw;">
+                &#8226 Autodesk Inventor Professional<br>
+                &#8226 Autodesk Fusion 360<br>
+                &#8226 SolidWorks<br>
+                &#8226 Blender<br>
+            </div>
+            <img class = "backingM">
         </div>
-        <div style = "flex: 1.2;background-color: #f6f8fd;">
-            <hr style = "background-color: #15161b; border: 1px #15161b solid; width: 10px; height: 440px; position: absolute; top: -30px; left: 714px;">
-            <img src = "images/node.png" style = "height: 40px; position: absolute; top: 135px; left: 880px;">
-            <hr style = "background-color: #15161b; border: 1px #15161b solid; width: 170px; height: 10px; position: absolute; top: 143px; left: 714px;">
-            <img src = "images/NYYTTS.PNG" style = "height: 230px; position: absolute; top: 40px; left: 950px;">
+        <div class = "mechanicalM" style = "top: 640vw;" id = "MEE">
+            <img class = "centerIconM" style = "content: url('images/plugIcon.png'); width: 20%; left: 40%;">
+            <div class = "descriptionM2">Electrical Systems</div>
+            <div class = "descriptionM2" style = "top: 85vw; width: 60%; text-align: left; left: 20%; font-size: 3.5vw;">
+                Through hands-on experience relating to electrical systems, I have a thorough understanding of 
+                both circuit design and analysis. Here are some of the technologies I've worked with:
+            </div>
+            <div class = "descriptionM2" style = "top: 120vw; width: 60%; text-align: left; left: 20%; font-size: 3.5vw;">
+                &#8226 Arduino<br>
+                &#8226 LabView<br>
+                &#8226 CircuitLab<br>
+            </div>
+            <img class = "backingM" style = "content: url('images/EEBorder.png')">
         </div>
-    </div>
-    <div id = "openingPage" style = "display: flex; height: 480px;">
-        <div style = "flex: 0.8; background-color: #f6f8fd;padding:60px;padding-top:30px;">
-            <div id = "AboutMeTitle" style = "font-family: PTSansBOLD;color: #15161b;width:100%;
-            z-index: 9;min-width: 400px;padding-left:0px">Science Adventure<br> Kids</div>
-            <hr style = "width:210px; margin-left:3px; height:0px; border: 1px #15161b solid; background-color: #15161b; margin-top: 5px;"><br>
-            <p style = "font-family: PTSans;color: #15161b;width:100%;z-index: 9;min-width: 400px;padding-left:0px; font-size:16px; margin-top:-20px;
-            margin-bottom: 20px;">
-                <span style = "font-family: PTSansBOLD; font-size:20px;">Instructor</span><br>
-                <span style = "font-family: PTSansITALIC; font-size:14px;">(June 2019 - September 2019)</span><br>
-            </p>
-            <p style = "font-family: PTSans;color: #15161b;width:100%;z-index: 9;min-width: 400px;padding-left:0px; font-size:16px;">
-                Managed social media platforms<br><br>
-                Taught children elementary-level science concepts<br><br>
-                Helped children with disabilities keep up with instruction<br><br>
-                Established effective communication with children and coworkers<br><br>
-                Responsible for animal care, feedings, and cleanings<br><br>
-            </p>
+        <div class = "mechanicalM" style = "top: 840vw;" id = "MCS">
+            <img class = "centerIconM" style = "content: url('images/CSicon.png');">
+            <div class = "descriptionM2">Software Development</div>
+            <div class = "descriptionM2" style = "top: 85vw; width: 60%; text-align: left; left: 20%; font-size: 3.5vw;">
+                Aside from my Mechanical Engineering Career, I'm a software developer in New York City. 
+                These are some of the languages I'm proficient in:
+            </div>
+            <div class = "descriptionM2" style = "top: 120vw; width: 60%; text-align: left; left: 20%; font-size: 3.5vw;">
+                &#8226 MATLAB<br>
+                &#8226 Python<br>
+                &#8226 Java<br>
+                &#8226 C#<br>
+                &#8226 XML, HTML & CSS<br>
+                &#8226 JavaScript<br>
+                &#8226 PHP<br>
+                &#8226 Arduino<br>
+            </div>
+            <img class = "backingM" style = "content: url('images/CSBorder.png')">
         </div>
-        <div style = "flex: 1.2;background-color: #f6f8fd;padding:60px;">
-            <hr style = "background-color: #15161b; border: 1px #15161b solid; width: 10px; height: 160px; position: absolute; top: -30px; left: 714px;">
-            <img src = "images/node.png" style = "height: 40px; position: absolute; top: 135px; left: 700px;">
+        <div class = "containerM2">
+            <div class = "jobEntryM" style = "margin-bottom: 19vw;" id = "jobEntry1M">
+                <a class = "titleM3" style = "position: relative;"><b>TC Electric</b></a>
+                <hr style = "position: relative; width:40vw; margin-left:0px; height:0px; 
+                border: 1px #B2B8B9 solid; background-color: #B2B8B9;">
+                <a class = "descriptionM3" style = "position: relative;">
+                    <b style = "font-size:5vw;line-height: 7vw; margin-top: 1vw;">Field Engineer Intern</b><br>
+                    <i>(May 2023 - Present)</i>
+                </a>
+            </div>
+            <div class = "jobEntryM" style = "margin-bottom: 19vw;" id = "jobEntry2M">
+                <a class = "titleM3" style = "position: relative;"><b>American Society Of Mechanical Engineers</b></a>
+                <hr style = "position: relative; width:60vw; margin-left:0px; height:0px; 
+                border: 1px #B2B8B9 solid; background-color: #B2B8B9;">
+                <a class = "descriptionM3" style = "position: relative;">
+                    <b style = "font-size:5vw;line-height: 7vw; margin-top: 1vw;">President</b><br>
+                    <i>(May 2022 - January 2023)</i><br><br>
+                    <a style = "font-size: 3.5vw;">
+                        Designed and deployed a new website for the club using Heroku<br><br>
+                        Used HTML, CSS, JavaScript, and JQuery to develop a responsive front 
+                        end that responds to different device sizes<br><br>
+                        Use PHP to create self-updating content on the home page<br><br>
+                        Complete search engine optimization and penetration testing to 
+                        make sure that the website is secure and visible.<br><br>
+                        Plan events on and off campus to increase organization popularity 
+                        and member retention<br><br>
+                        Maintain relations with ASME contacts such as Long Island Power Plants, 
+                        industry professionals and Stony Brook Alumni<br><br>
+                    </a>
+                </a>
+            </div>
+            <div class = "jobEntryM" style = "margin-bottom: 19vw;" id = "jobEntry3M">
+                <a class = "titleM3" style = "position: relative;"><b>Stony Brook Motorsports</b></a>
+                <hr style = "position: relative; width:40vw; margin-left:0px; height:0px; 
+                border: 1px #B2B8B9 solid; background-color: #B2B8B9;">
+                <a class = "descriptionM3" style = "position: relative;">
+                    <b style = "font-size:5vw;line-height: 7vw; margin-top: 1vw;">Mechanical Engineer</b><br>
+                    <i>(August 2021 - December 2021)</i><br><br>
+                    <a style = "font-size: 3.5vw;">
+                        Worked with a team to design, develop, build, and test a vehicle for the Baja SAE competition<br><br>
+                    </a>
+                </a>
+            </div>
+            <div class = "jobEntryM" style = "margin-bottom: 19vw;" id = "jobEntry4M">
+                <a class = "titleM3" style = "position: relative;"><b>ID Tech Camps</b></a>
+                <hr style = "position: relative; width:60vw; margin-left:0px; height:0px; 
+                border: 1px #B2B8B9 solid; background-color: #B2B8B9;">
+                <a class = "descriptionM3" style = "position: relative;">
+                    <b style = "font-size:5vw;line-height: 7vw; margin-top: 1vw;">Online Private Learning Instructor</b><br>
+                    <i>(May 2022 - Present)</i><br><br>
+                    <a style = "font-size: 3.5vw;">
+                        Taught one-on-one courses at both middle school and high school levels<br><br>
+                        Taught classes in Web Development, Game Development, C#, Java, 3D modeling, 
+                        Mental Math, Algebra, Geometry, and Calculus<br><br>
+                        Wrote daily session reports for each student to keep parents informed 
+                        of their child's progress and improve client retention.<br><br>
+                        Created lesson plans catered to each individual student<br><br>
+                    </a>
+                </a>
+            </div>
+            <div class = "jobEntryM" style = "margin-bottom: 19vw;" id = "jobEntry5M">
+                <a class = "titleM3" style = "position: relative;"><b>Marni Halasa<br> For City Council</b></a>
+                <hr style = "position: relative; width:60vw; margin-left:0px; height:0px; 
+                border: 1px #B2B8B9 solid; background-color: #B2B8B9;">
+                <a class = "descriptionM3" style = "position: relative;">
+                    <b style = "font-size:5vw;line-height: 7vw; margin-top: 1vw;">Senior Web Developer</b><br>
+                    <i>(September 2020 - January 2021)</i><br><br>
+                    <a style = "font-size: 3.5vw;">
+                        Designed, developed, and deployed a new website for the campaign using WordPress<br><br>
+                        Successfully managed a team of two Junior Web Developers<br><br>
+                        Trained staff members on how to use WordPress plugins and independently 
+                        make changes to the website<br><br>
+                        Create responsive UIs on both PC and mobile platforms<br><br>
+                        Worked with client to create a user experience representative 
+                        of the brand<br><br>
+                    </a>
+                </a>
+            </div>
+            <div class = "jobEntryM" style = "margin-bottom: 19vw;" id = "jobEntry6M">
+                <a class = "titleM3" style = "position: relative;"><b>New York Youth Technology Team</b></a>
+                <hr style = "position: relative; width:60vw; margin-left:0px; height:0px; 
+                border: 1px #B2B8B9 solid; background-color: #B2B8B9;">
+                <a class = "descriptionM3" style = "position: relative;">
+                    <b style = "font-size:5vw;line-height: 7vw; margin-top: 1vw;">Computer Science Instructor</b><br>
+                    <i>(June 2020 - November 2020)</i><br><br>
+                    <a style = "font-size: 3.5vw;">
+                        Created Lessons and projects for students in middle school<br><br>
+                        Taught children how to code in python using if statements, loops, 
+                        recursion and other techniques.<br><br>
+                        Graded homework and classwork<br><br>
+                    </a>
+                </a>
+            </div>
+            <div class = "jobEntryM" style = "margin-bottom: 19vw;" id = "jobEntry7M">
+                <a class = "titleM3" style = "position: relative;"><b>Greater Astoria Historical Society</b></a>
+                <hr style = "position: relative; width:60vw; margin-left:0px; height:0px; 
+                border: 1px #B2B8B9 solid; background-color: #B2B8B9;">
+                <a class = "descriptionM3" style = "position: relative;">
+                    <b style = "font-size:5vw;line-height: 7vw; margin-top: 1vw;">Software Developer</b><br>
+                    <i>(May 2019 - August 2020)</i><br><br>
+                    <a style = "font-size: 3.5vw;">
+                        Developed WordPress plugins using PHP to streamline website submission processes<br><br>
+                        Designed new organization website that tripled user traffic<br><br>
+                        Created software to automate day-to-day tasks, completing weeks' worth of work in a few minutes<br><br>
+                        Designed a python program to parse spreadsheets of over 22,000 addresses and convert each to a code used for filing<br><br>
+                        Designed a Java program to upscale scanned images of maps and automatically clean up imperfections<br><br>
+                    </a>
+                </a>
+            </div>
+            <div class = "jobEntryM" style = "margin-bottom: 1vw;" id = "jobEntry8M">
+                <a class = "titleM3" style = "position: relative;"><b>Student Union IT Department</b></a>
+                <hr style = "position: relative; width:60vw; margin-left:0px; height:0px; 
+                border: 1px #B2B8B9 solid; background-color: #B2B8B9;">
+                <a class = "descriptionM3" style = "position: relative;">
+                    <b style = "font-size:5vw;line-height: 7vw; margin-top: 1vw;">IT Technician</b><br>
+                    <i>(September 2019 - January 2020)</i><br><br>
+                    <a style = "font-size: 3.5vw;">
+                        Worked with a team to add features to and update Student Union website<br><br>
+                        Managed IT help desk for the Student Union website<br><br>
+                    </a>
+                </a>
+            </div>
+            <img id = "pipeM_003">
         </div>
     </div>
 </body>
