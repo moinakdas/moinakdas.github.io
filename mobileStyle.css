@@ -5,7 +5,7 @@
 }
 
 #mobileMecOff{
-    content: url("/images/mechanicalEoff.png");
+    content: url("images/mechanicalEoff.png");
     position: absolute;
     top: 50vw;
     left: 4%;
@@ -14,7 +14,7 @@
 
 #mobileMecOn{
     opacity: 0;
-    content: url("/images/mechanicalEon.png");
+    content: url("images/mechanicalEon.png");
     position: absolute;
     top: 50vw;
     left: 4%;
@@ -33,7 +33,7 @@
 
 #speedNeedle{
     position: absolute;
-    content: url("/images/mobile/speedNeedle.png");
+    content: url("images/mobile/speedNeedle.png");
     width: 86%;
     left: 7%;
     top: 30vw;
@@ -42,7 +42,7 @@
 
 #pipeM_001{
     position: absolute;
-    content: url("/images/mobile/pipeM_001.png");
+    content: url("images/mobile/pipeM_001.png");
     width: 80%;
     left: 0%;
     top: 120vw;
