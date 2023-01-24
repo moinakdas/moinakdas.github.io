@@ -133,7 +133,7 @@ $(document).ready(function(){
                     trigger();
                     screenOn = true;
                 }
-            }, 4100);  
+            }, 2100);  
         }
     }
 
@@ -141,7 +141,7 @@ $(document).ready(function(){
         var currentoffset = 0;
         $("#forward").click(function(){
             if(screenOn && currentoffset > -140){
-                currentoffset = currentoffset - 14.15;
+                currentoffset = currentoffset - 42.45;
                 offsetStr = String(currentoffset)  + "vw";
                 $("#skillsTab").css("left",offsetStr);
                 trigger();
@@ -149,7 +149,7 @@ $(document).ready(function(){
         });
         $("#backward").click(function(){
             if(screenOn && currentoffset < -1){
-                currentoffset = currentoffset + 14.15;
+                currentoffset = currentoffset + 42.45;
                 offsetStr = String(currentoffset)  + "vw";
                 $("#skillsTab").css("left",offsetStr);
                 trigger();

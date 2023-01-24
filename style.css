@@ -409,19 +409,19 @@ a{
 }
 
 .animate0 {
-    -webkit-animation: loading0 3s;
+    -webkit-animation: loading0 1.5s;
 }
 
 .animate1 {
-    -webkit-animation: loading 4s;
+    -webkit-animation: loading 2s;
 }
 
 .animate2 {
-    -webkit-animation: loading2 4s;
+    -webkit-animation: loading2 2s;
 }
 
 .animate3{
-    -webkit-animation: loading3 3.5s;
+    -webkit-animation: loading3 1.75s;
 }
 
 @-webkit-keyframes loading0 {
